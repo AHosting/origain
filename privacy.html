@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Origain</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1f2b; --dim: #5c6675; --line: #e3e7ee;
+    --box: #f6f8fb; --accent: #0b6e7f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #11151c; --fg: #e6eaf2; --dim: #9aa6b8; --line: #263041;
+      --box: #182130; --accent: #5fd3e6;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #11151c; --fg: #e6eaf2; --dim: #9aa6b8; --line: #263041;
+    --box: #182130; --accent: #5fd3e6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 48px 16px 96px;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.4px; }
+  h2 { font-size: 19px; margin: 40px 0 10px; letter-spacing: -0.2px; }
+  h3 { font-size: 15px; margin: 24px 0 6px; }
+  p, li { color: var(--fg); }
+  .sub { color: var(--dim); margin: 0 0 8px; }
+  .lead { font-size: 17px; }
+  code { background: var(--box); padding: 1px 5px; border-radius: 4px; font-size: 13.5px; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 14.5px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--dim); font-weight: 600; font-size: 12.5px; text-transform: uppercase; letter-spacing: .04em; }
+  .box { background: var(--box); border: 1px solid var(--line); border-radius: 8px; padding: 14px 18px; margin: 18px 0; }
+  .box p:first-child { margin-top: 0; } .box p:last-child { margin-bottom: 0; }
+  ul { padding-left: 22px; }
+  ul ul { margin-top: 6px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+  footer { color: var(--dim); font-size: 13.5px; }
+  @media (max-width: 560px) {
+    body { padding: 32px 16px 72px; }
+    table, thead, tbody, th, td, tr { display: block; }
+    thead { display: none; }
+    td { border: 0; padding: 2px 0; }
+    tr { border-bottom: 1px solid var(--line); padding: 10px 0; }
+    td:first-child { font-weight: 600; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Privacy Policy</h1>
+  <p class="sub">Origain — prompt AI from any page (Chrome extension)</p>
+  <p class="sub">Last updated 17 October 2026. Applies to version 0.1.</p>
+
+  <div class="box">
+    <p><strong>The short version.</strong> Origain has no server. Nothing it stores leaves your
+    computer, and nothing is read from a page unless you press a button to read it.</p>
+    <p>The one time anything goes anywhere is when you press <strong>Put it in the box</strong> or
+    <strong>Put it in and send</strong>, and then it goes exactly where you chose: into a conversation
+    you already had open, in your own browser, in your own account with that provider.</p>
+  </div>
+
+  <h2>Who this is from</h2>
+  <p>Origain is published by AHosting, an independent project. Questions about this policy can be
+  raised as an issue on the project's repository at
+  <a href="https://github.com/AHosting/origain">github.com/AHosting/origain</a>.</p>
+
+  <h2>What is stored, and where</h2>
+  <p>Everything is kept in <code>chrome.storage.local</code> on this computer. There is no account, no
+  sync, no backup and no remote copy.</p>
+
+  <table>
+    <thead>
+      <tr><th>What</th><th>Why</th><th>When it is written</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>The prompt you composed</td><td>So the page you wrote it from can list it later</td><td>When you copy, push or send it</td></tr>
+      <tr><td>The page's address and title</td><td>So the list can be grouped by the page it came from</td><td>Same</td></tr>
+      <tr><td>The conversation's address</td><td>So you can get back to where the answer is</td><td>When you push or send into a conversation</td></tr>
+      <tr><td>The answer you collected</td><td>So the question and what it produced are filed together</td><td>Only when you press the button to collect it</td></tr>
+      <tr><td>The shape of the prompt</td><td>The instruction and section labels, so the next page can offer them again</td><td>When you copy, push or send</td></tr>
+      <tr><td>How each field was filled</td><td>"The editor", "this page", or a CSS selector, so the next page can fill it in</td><td>Same</td></tr>
+      <tr><td>Your unfinished draft</td><td>So leaving a page and coming back does not lose it</td><td>As you type</td></tr>
+      <tr><td>A shape somebody sent you</td><td>So it can be offered on the pages it was made for</td><td>When you press <strong>Add this shape</strong></td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>The contents of a field are stored</strong> as part of the prompt — if you put the problem
+  statement and your code into a prompt, that text is in the record of that prompt. That is the point
+  of the record: it is what you asked.</p>
+
+  <h2>What is read from a page, and when</h2>
+  <p>Only on a press, and only on a site you have allowed. Origain ships with no access to any website.
+  The first time you use it on a site it asks, and you grant that one site; you can take it back at any
+  time in <code>chrome://extensions</code>.</p>
+
+  <ul>
+    <li><strong>Use selection</strong> — reads the text you have highlighted, and works out a CSS
+    selector describing where it was, so the same field can be found on the next page of that kind.</li>
+    <li><strong>This page</strong> — reads the page's visible text, up to 15,000 characters. Where the
+    page has structure worth keeping — a table, a list, a code block — that structure is preserved.</li>
+    <li><strong>The editor</strong> — asks a code editor on the page (Monaco, CodeMirror) for its text.
+    This runs in the page's own JavaScript, because an editor keeps your file in memory and only draws
+    the lines on screen. It reads; it never types, changes or saves anything.</li>
+    <li><strong>Paste</strong> — nothing is read at all. You put something in a field yourself, and
+    Origain records that you pasted it rather than typed it, so the next page can say
+    <em>paste it again</em>.</li>
+  </ul>
+
+  <p>When a field has to be pasted, Origain also checks whether the page <strong>publishes its own copy
+  for an LLM</strong> — a <code>&lt;link rel="alternate" type="text/markdown"&gt;</code>, or a button
+  labelled like <em>Copy for LLM</em>. It reads only whether such a thing exists, so the panel can say
+  "press that and paste it here" instead of leaving you with nothing to go on.
+  <strong>It never presses it.</strong> Operating a control on your page is the one thing Origain will
+  not do: you press the site's button, and Origain holds what you hand it.</p>
+
+  <p>Nothing is read in the background. Nothing is read on a schedule. Closing the panel stops
+  everything.</p>
+
+  <h2>The destinations</h2>
+  <p>Origain can put a prompt into a conversation at any of these, and each one is allowed by you
+  separately:</p>
+
+  <table>
+    <thead>
+      <tr><th>Provider</th><th>Where</th><th>How it is offered</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Claude</td><td><code>claude.ai</code></td><td>A button</td></tr>
+      <tr><td>ChatGPT</td><td><code>chatgpt.com</code></td><td>A button</td></tr>
+      <tr><td>Gemini</td><td><code>gemini.google.com</code></td><td>A button</td></tr>
+      <tr><td>Perplexity</td><td><code>perplexity.ai</code></td><td>The picker</td></tr>
+      <tr><td>Le Chat</td><td><code>chat.mistral.ai</code></td><td>The picker</td></tr>
+      <tr><td>Copilot</td><td><code>copilot.com</code></td><td>The picker</td></tr>
+      <tr><td>DeepSeek</td><td><code>chat.deepseek.com</code></td><td>The picker</td></tr>
+      <tr><td>Qwen</td><td><code>chat.qwen.ai</code></td><td>The picker</td></tr>
+      <tr><td>Kimi</td><td><code>kimi.com</code></td><td>The picker</td></tr>
+    </tbody>
+  </table>
+
+  <p>Origain installs able to reach no website at all — every one of these included. Allowing one
+  grants that one provider; the rest remain unreachable, and each is revocable on its own in
+  <code>chrome://extensions</code>. A provider you have not allowed cannot receive a prompt even by
+  mistake, because the browser will not carry it.</p>
+
+  <ul>
+    <li>Origain can put text into a conversation's message box there, and — if you press the second
+    button — click Send once.</li>
+    <li>The list is fixed in the extension. There is nowhere to type an address, so nothing you paste
+    and nothing you save can send a prompt somewhere that is not on it.</li>
+    <li>Origain never reads your history or your account, and never reads a conversation it did not put
+    a prompt into.</li>
+    <li>It can <strong>collect the answer to a prompt it sent</strong>, when you press the button for
+    it on that prompt. The answer is kept on your computer, against the question that produced it.
+      <ul>
+        <li>Only for a conversation Origain recorded delivering to, only while that conversation is
+        open, and only on a site you have allowed.</li>
+        <li><strong>Only the answer to that prompt.</strong> Origain finds its own message in the
+        conversation and takes the reply that follows it. A thread holds many unrelated questions;
+        which answer is collected is decided by where your prompt sits, not by which answer is
+        newest.</li>
+        <li>If its prompt is not in that conversation, it collects nothing and says so.</li>
+        <li>It reads that one answer and nothing else. Not your other conversations, not the rest of
+        that one, not your prompts to it beyond locating its own.</li>
+        <li>On Claude, ChatGPT and Gemini it knows where an answer sits. On the other six it does not,
+        and finds the reply by position — its own message, then the next turn. If the page is not laid
+        out as a list of turns it reads nothing and tells you so.</li>
+      </ul>
+    </li>
+    <li>It <strong>never carries text out of one conversation into another.</strong> On an AI tab there
+    is no way to compose a prompt at all, which is why: a prompt built from one provider's conversation
+    and delivered to another is the one thing this extension will not do.</li>
+    <li>There is one question it can ask an AI tab, when you press the button for it:
+    <strong>whether a prompt Origain composed itself is present in it.</strong> This exists because a
+    prompt you copied to the clipboard and pasted by hand leaves no record of where it went, and
+    without it that prompt can never be linked back to the page it came from.
+      <ul>
+        <li>The question is asked as a fingerprint of Origain's <strong>own text</strong>, derived from
+        the prompt it composed. Nothing is ever added to your prompts to make this work — no
+        identifier, no marker, no hidden characters.</li>
+        <li>The comparison happens <strong>inside that tab</strong>. What comes back is a list of
+        Origain's own prompt ids and nothing else. There is no form of that answer that can carry your
+        conversation, and none of it leaves your computer in any case.</li>
+      </ul>
+    </li>
+    <li>After sending, it reads that tab's <strong>address</strong> — and only its address — because a
+    new conversation has no id until the first message, and the id is what lets you return to it
+    later.</li>
+  </ul>
+
+  <p>When you send a prompt, it goes to that provider under your own account and their terms and
+  privacy policy, exactly as if you had typed it there yourself. Origain is not a party to that
+  exchange and holds no key, token or credential for any of them.</p>
+
+  <h2>Seeing it, and deleting it</h2>
+  <p>Everything above is readable in one place: a button in the panel opens a page listing every prompt
+  you have composed and every answer you collected, searchable by words, by site, and by the shape of
+  the prompt.</p>
+
+  <p><strong>Anything there can be removed.</strong> Each entry has a Forget button, which deletes it
+  from storage rather than hiding it, and offers an undo until you navigate away. Removing the
+  extension removes all of it at once, as it does for any extension's local storage.</p>
+
+  <p>That page makes no requests, reads no website, and has no access to anything beyond the record
+  itself.</p>
+
+  <h2>Passing a shape on</h2>
+  <p>A shape is the reusable half of a prompt: the instruction, the section labels, a note of where each
+  value was last found, and the bare hostnames you used it on. <strong>Copy this shape</strong> puts
+  that on your clipboard as plain, readable JSON. <strong>Add this shape</strong> reads one you paste
+  in.</p>
+
+  <ul>
+    <li><strong>Nothing is uploaded and nothing is downloaded.</strong> There is no registry, index,
+    directory or server. A shape travels as text, through whatever you already use to talk to people,
+    and Origain is not involved in that.</li>
+    <li><strong>A shape carries no contents.</strong> Not the text of any field, not the addresses of
+    pages you visited, not the conversations anything went to, and not how often you used it. It is a
+    blank form, not a filled one.</li>
+    <li><strong>It is plain, readable JSON on purpose.</strong> You can read a shape before you accept
+    it. Shortening it into something encoded would make it a blob you have to trust blindly.</li>
+    <li><strong>A shape you paste in cannot read anything.</strong> It arrives as labels and an
+    instruction. Every read is still a button press, on a site you separately allowed, and you see the
+    filled prompt before anything goes anywhere.</li>
+    <li>A field asking to be filled in a way Origain does not support <strong>keeps its label and loses
+    that request</strong>, and the panel says exactly what it left out. A shape can ask for something
+    Origain already does; it can never add something new.</li>
+    <li><strong>A label is one line of visible text.</strong> Line breaks, control characters and
+    characters that display as something other than themselves are removed, so a label cannot write
+    extra headings into your prompt and what the panel shows you is what the prompt contains.</li>
+    <li><strong>A shape says where it intends to look</strong> — the place each field will be read from
+    is listed in the panel, before you apply it, next to the button that deletes it. No check can tell
+    a useful place to read from a sensitive one, so that one is answered by showing you rather than by
+    filtering.</li>
+    <li>A field reads text as a page displays it. <strong>The value you have typed into a box is not
+    page text</strong>, so a shape pointing at a password or token field comes back empty.</li>
+    <li>Shapes you were sent are stored on this computer like everything else, and can be removed one
+    at a time under <strong>Share a shape</strong>.</li>
+  </ul>
+
+  <p>A shape somebody sends you is their claim about a website, not a verified one. Origain shows you
+  whose it is, fills in what it can, and says what it could not.</p>
+
+  <h2>What Origain does not do</h2>
+  <ul>
+    <li>No analytics, telemetry, crash reporting or usage statistics.</li>
+    <li>No network requests of any kind. The extension makes none; it has no server and no endpoint.</li>
+    <li>No advertising, no profiling, no tracking, and nothing is sold or shared with anyone.</li>
+    <li>No reading of pages you have not allowed, and no reading of allowed pages without a press.</li>
+    <li>No remotely hosted code. Everything that runs is in the reviewed package.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Origain is not directed at children and collects nothing from anyone.</p>
+
+  <h2>Deleting what it has</h2>
+  <p>Everything is local, so removing the extension removes all of it. To clear it while keeping the
+  extension, remove any entry from the record page, or remove the extension in
+  <code>chrome://extensions</code> and install it again. Revoking a site's access there stops any
+  further reading of that site.</p>
+
+  <h2>Changes</h2>
+  <p>If a future version reads or stores anything not listed above, this page will say so before that
+  version ships, and the change will be described here rather than silently widened.</p>
+
+  <h2>Contact</h2>
+  <p>Raise an issue on the project's repository at
+  <a href="https://github.com/AHosting/origain">github.com/AHosting/origain</a>.</p>
+
+  <hr />
+  <footer>
+    <p>Origain — prompt AI from any page. This policy covers the Chrome extension only.</p>
+  </footer>
+
+</main>
+</body>
+</html>
